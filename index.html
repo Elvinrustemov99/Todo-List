@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="w-50 py-5  mx-auto">
+      <section class="todo-form">
+        <div class="d-flex flex-row mb-3 gap-2">
+          <input type="text" id="todo-input" class="form-control">
+          <button id="add-button" class="btn btn-primary">Add</button>
+        </div>
+      </section>
+
+      <section class="status-bar">
+        <nav class="mb-2">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="true">All (<span id="all-count"></span>)</button>
+            <button class="nav-link" id="nav-completed-tab" data-bs-toggle="tab" data-bs-target="#nav-completed" type="button" role="tab" aria-controls="nav-completed" aria-selected="false">Completed (<span id="completed-count"></span>)</button>
+            <button class="nav-link" id="nav-uncompleted-tab" data-bs-toggle="tab" data-bs-target="#nav-uncompleted" type="button" role="tab" aria-controls="nav-uncompleted" aria-selected="false">Uncompleted (<span id="uncompleted-count"></span>)</button>
+          </div>
+        </nav>
+
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab" tabindex="0">
+
+            <!-- <ul class="list-group list-group">
+              <li class="list-group-item d-flex justify-content-between">
+                <span>A list item</span>
+                <div>
+                  <button type="button" class="btn btn-success btn-sm">Coplete</button>
+                  <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                </div>
+              </li>
+    
+              <li class="list-group-item d-flex justify-content-between">
+                <span class="text-decoration-line-through">A list item</span>
+                <div>
+                  <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                </div>
+              </li>
+            </ul> -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-completed" role="tabpanel" aria-labelledby="nav-completed-tab" tabindex="0">
+            <!-- completed-tasks
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between">
+                <span class="text-decoration-line-through">A list item</span>
+                <div>
+                  <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                </div>
+              </li>
+            </ul> -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-uncompleted" role="tabpanel" aria-labelledby="nav-uncompleted-tab" tabindex="0">
+            <!-- uncompleted-tasks
+            <ul class="list-group list-group">
+              <li class="list-group-item d-flex justify-content-between">
+                <span>A list item</span>
+                <div>
+                  <button type="button" class="btn btn-success btn-sm">Coplete</button>
+                  <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                </div>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="todo-list">
+        
+      </section>
+
+    </div>
+
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
